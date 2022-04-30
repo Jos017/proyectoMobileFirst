@@ -26,3 +26,24 @@ html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
 }
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin: 40px 0;
+}
+.header__title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+}

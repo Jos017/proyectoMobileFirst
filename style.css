@@ -91,3 +91,21 @@ header img {
     width: 24px;
     height: 24px;
 }
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+.exchange {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+}
+.exchange__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}

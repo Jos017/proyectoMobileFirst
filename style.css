@@ -277,7 +277,7 @@ main {
     line-height: 1.8rem;
     color: var(--card-grey);
 }
-.product-detail__card {
+.product-detail__product-card {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -289,7 +289,7 @@ main {
     background-color: var(--warm-black);
     box-shadow: 0 4px 8px 0 #00000029;
 }
-.product-detail__card .card__ico {
+.product-detail__product-card .product-card__ico {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -298,26 +298,26 @@ main {
     background-position: center;
     background-repeat: none;
 }
-.product-detail__card .card__ico--clock {
+.product-detail__product-card .product-card__ico--clock {
     background-image: url(./assets/icons/clock.svg);
 }
-.product-detail__card .card__ico--eye {
+.product-detail__product-card .product-card__ico--eye {
     background-image: url(./assets/icons/eye.svg);
 }
-.product-detail__card .card__ico--dollar {
+.product-detail__product-card .product-card__ico--dollar {
     background-image: url(./assets/icons/dollar-sign.svg);
 }
-.product-detail__card .card__ico--check {
+.product-detail__product-card .product-card__ico--check {
     background-image: url(./assets/icons/check-circle.svg);
 }
-.product-detail__card .card__title {
+.product-detail__product-card .product-card__title {
     margin-bottom: 10px;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 1.8rem;
     color: var(--just-white);
 }
-.product-detail__card .card__info {
+.product-detail__product-card .product-card__info {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;

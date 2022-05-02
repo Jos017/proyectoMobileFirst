@@ -139,17 +139,6 @@ main {
 }
 
 /* CSS Exchange Tables */
-.exchange__table-container {
-    display: flex;
-    width: 90%;
-    max-width: 700px;
-    margin: 0 auto;
-    height: 316px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
-}
 .exchange__exchange-table {
     position: relative;
     width: 70%;
@@ -157,12 +146,11 @@ main {
     max-width: 500px;
     height: 241px;
     margin: 0 auto 64px auto;
-    scroll-snap-align: center;
 }
 .arrow {
     display: inline-block;
     position: absolute;
-    top: 45%;
+    top: 105px;
     width: 24px;
     height: 24px;
     background-position: center;
@@ -457,6 +445,7 @@ main {
 }
 .plans__plan-card .plan-card__saving {
     margin-bottom: 16px;
+    min-height: 3rem;
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
@@ -513,32 +502,4 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
-}
-
-@media (max-width: 600px) {
-    .plans__plans-container-slider .plans__plan-card:first-child {
-        margin-left: calc(50% - 95px);
-    }
-    .plans__plans-container-slider .plans__plan-card:last-child {
-        margin-right: calc(50% - 95px);
-    }
-    .exchange__table-container {
-        gap: calc(50% - 117.5px);
-    }
-    .exchange__table-container .exchange__exchange-table:first-child {
-        margin-left: calc(50% - 117.5px);
-    }
-    .exchange__table-container .exchange__exchange-table:last-child {
-        margin-right: calc(50% - 117.5px);
-    }
-    .arrow--currency {
-        right: 4px;
-        background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
-        transform: rotate(-90deg);
-    }
-    .arrow--comision {
-        left: -4px;
-        background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
-        transform: rotate(90deg);
-    }
 }

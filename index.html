@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
 </head>
 <body>
     <header>
@@ -29,9 +30,9 @@
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
             <div class="exchange__table-container">
-                <div class="exchange__exchange-table">
+                <div class="exchange__exchange-table exchange__exchange-table--currency">
                     <span class="arrow arrow--currency"></span>
-                    <h3 id="currency-table" class="exchange-table__title exchange-table__title--currency">Monedas</h3>
+                    <h3 class="exchange-table__title exchange-table__title--currency">Monedas</h3>
                     <table>
                         <tr>
                             <td class="table--top-left table--left">
@@ -69,7 +70,7 @@
                         <strong>Actualizado: </strong>Julio 23:45
                     </p>
                 </div>
-                <div id="comision-table" class="exchange__exchange-table">
+                <div class="exchange__exchange-table exchange__exchange-table--comision">
                     <span class="arrow arrow--comision"></span>
                     <h3 class="exchange-table__title exchange-table__title--comision">Comisiones</h3>
                     <table>

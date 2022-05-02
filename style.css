@@ -104,7 +104,7 @@ main {
 .exchange {
     width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding-top: 60px;
 }
 .exchange .background-img {
     width: 195px;
@@ -242,7 +242,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding: 64px 16px;
+    padding: 64px 16px 31px;
     background-color: var(--black);
 }
 .product-detail .product-detail__ico {
@@ -254,6 +254,7 @@ main {
     background-image: url("./assets/icons/batata.svg");
     background-size: cover;
     background-position: center;
+    background-repeat: none;
     transform: scaleX(-1);
 }
 .product-detail__title {
@@ -275,4 +276,67 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--card-grey);
+}
+.product-detail__card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 152px;
+    margin: 16px auto;
+    padding: 16px;
+    border-radius: 4px;
+    text-align: left;
+    background-color: var(--warm-black);
+    box-shadow: 0 4px 8px 0 #00000029;
+}
+.product-detail__card .card__ico {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+.product-detail__card .card__ico--clock {
+    background-image: url(./assets/icons/clock.svg);
+}
+.product-detail__card .card__ico--eye {
+    background-image: url(./assets/icons/eye.svg);
+}
+.product-detail__card .card__ico--dollar {
+    background-image: url(./assets/icons/dollar-sign.svg);
+}
+.product-detail__card .card__ico--check {
+    background-image: url(./assets/icons/check-circle.svg);
+}
+.product-detail__card .card__title {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product-detail__card .card__info {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--card-grey);
+}
+
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 387px;
+    background-image: url(./assets/images/bitcoinbaby_x2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+.bitcoin-img-container h2 {
+    padding-top: 65px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
 }

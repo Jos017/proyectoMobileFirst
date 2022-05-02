@@ -139,12 +139,35 @@ main {
 }
 
 /* CSS Exchange Tables */
+.exchange__table-container {
+    display: flex;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 316px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .exchange__exchange-table {
+    position: relative;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 241px;
     margin: 0 auto 64px auto;
+    scroll-snap-align: center;
+}
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: none;
 }
 .exchange-table__title {
     width: 90%;
@@ -368,14 +391,24 @@ main {
     line-height: 1.8rem;
     color: var(--dark-grey);
 }
+.plans__plans-container-slider {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .plans__plan-card {
     position: relative;
+    scroll-snap-align: center;
     width: 58%;
     min-width: 190px;
     max-width: 300px;
     height: 247px;
-    margin: 50px auto 0;
-    padding: 24px 20px;
+    margin: 50px 8px 0;
+    padding: 24px 18px;
     border-radius: 8px;
     background-color: var(--just-white);
     box-shadow: 0 4px 8px 0 #59491E29;
@@ -441,7 +474,7 @@ main {
     border: 2px solid var(--bitcoin-orange);
     border-radius: 4px;
     background-color: var(--off-white);
-    
+    cursor: pointer;
 }
 .plans__plan-card .plan-card__button span {
     display: inline-block;
@@ -453,4 +486,31 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: none;
+}
+@media (max-width: 600px) {
+    .plans__plans-container-slider .plans__plan-card:first-child {
+        margin-left: calc(50% - 95px);
+    }
+    .plans__plans-container-slider .plans__plan-card:last-child {
+        margin-right: calc(50% - 95px);
+    }
+    .exchange__table-container {
+        gap: calc(50% - 117.5px);
+    }
+    .exchange__table-container .exchange__exchange-table:first-child {
+        margin-left: calc(50% - 117.5px);
+    }
+    .exchange__table-container .exchange__exchange-table:last-child {
+        margin-right: calc(50% - 117.5px);
+    }
+    .arrow--currency {
+        right: 4px;
+        background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
+        transform: rotate(-90deg);
+    }
+    .arrow--comision {
+        left: -4px;
+        background-image: url("./assets/icons/mdi_keyboard_arrow_down.svg");
+        transform: rotate(90deg);
+    }
 }

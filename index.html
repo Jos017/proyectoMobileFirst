@@ -30,7 +30,8 @@
             </div>
             <div class="exchange__table-container">
                 <div class="exchange__exchange-table">
-                    <h3 class="exchange-table__title exchange-table__title--currency">Monedas</h3>
+                    <span class="arrow arrow--currency"></span>
+                    <h3 id="currency-table" class="exchange-table__title exchange-table__title--currency">Monedas</h3>
                     <table>
                         <tr>
                             <td class="table--top-left table--left">
@@ -68,7 +69,8 @@
                         <strong>Actualizado: </strong>Julio 23:45
                     </p>
                 </div>
-                <div class="exchange__exchange-table">
+                <div id="comision-table" class="exchange__exchange-table">
+                    <span class="arrow arrow--comision"></span>
                     <h3 class="exchange-table__title exchange-table__title--comision">Comisiones</h3>
                     <table>
                         <tr>
@@ -146,13 +148,14 @@
                 <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                 <p>Cualquier plan te da acceso completo a nuestra plataforma</p>
             </div>
-            <section class="plans__plans-container">
-                <article class="plans__plan-card plans__plan-card--month">
-                    <h3 class="plan-card__title">Pago Mensual</h3>
+            <section class="plans__plans-container-slider">
+                <article class="plans__plan-card plans__plan-card--year">
+                    <p class="recommended">Recomendado</p>
+                    <h3 class="plan-card__title">Pago Anual</h3>
                     <p class="plan-card__price">
-                        <span>$ </span>119
+                        <span>$ </span>99
                     </p>
-                    <p class="plan-card__saving">*Se requiere tarjeta de crédito/debito o PayPal.</p>
+                    <p class="plan-card__saving">*Ahorras $240 comparado al plan mensual.</p>
                     <button class="plan-card__button">
                         Escoger este<span></span>
                     </button>
@@ -167,13 +170,12 @@
                         Escoger este<span></span>
                     </button>
                 </article>
-                <article class="plans__plan-card plans__plan-card--year">
-                    <p class="recommended">Recomendado</p>
-                    <h3 class="plan-card__title">Pago Anual</h3>
+                <article class="plans__plan-card plans__plan-card--month">
+                    <h3 class="plan-card__title">Pago Mensual</h3>
                     <p class="plan-card__price">
-                        <span>$ </span>99
+                        <span>$ </span>119
                     </p>
-                    <p class="plan-card__saving">*Ahorras $240 comparado al plan mensual.</p>
+                    <p class="plan-card__saving">*Se requiere tarjeta de crédito/debito o PayPal.</p>
                     <button class="plan-card__button">
                         Escoger este<span></span>
                     </button>

@@ -11,6 +11,7 @@
     --soft-orange: #FFE9D5;
     --secondary-blue: #1A9AF7;
     --soft-blue: #E7F5FF;
+    --just-black: #000000;
     --black: #201E1C;
     --warm-black: #282623;
     --card-grey: #808080;
@@ -352,7 +353,7 @@ main {
     min-width: 288px;
     max-width: 900px;
     height: auto;
-    margin: 0 auto 50px;
+    margin: 0 auto;
 }
 .plans__title h2 {
     margin-bottom: 24px;
@@ -366,4 +367,90 @@ main {
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--dark-grey);
+}
+.plans__plan-card {
+    position: relative;
+    width: 58%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 247px;
+    margin: 50px auto 0;
+    padding: 24px 20px;
+    border-radius: 8px;
+    background-color: var(--just-white);
+    box-shadow: 0 4px 8px 0 #59491E29;
+}
+.recommended {
+    position: absolute;
+    width: 101px;
+    height: 31px;
+    top: -16px;
+    left: calc(50% - 50.5px);
+    margin: 0 auto;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+.plans__plan-card .plan-card__title {
+    margin: 7px auto 8px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-black);
+}
+.plans__plan-card .plan-card__price {
+    display: inline-block;
+    position: relative;
+    height: 56px;
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+    color: var(--just-black);
+}
+.plans__plan-card .plan-card__price span {
+    position: absolute;
+    top: 1.2rem;
+    left: -12px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: var(--black);
+}
+.plans__plan-card .plan-card__saving {
+    margin-bottom: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: var(--dark-grey); 
+}
+.plans__plan-card .plan-card__button {
+    height: 48px;
+    padding: 12px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    color: var(--black);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    background-color: var(--off-white);
+    
+}
+.plans__plan-card .plan-card__button span {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/arrow-right.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
 }

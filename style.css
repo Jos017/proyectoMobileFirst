@@ -503,3 +503,7 @@ footer .left ul {
     text-decoration: none;
     color: var(--just-white);
 }
+.right img {
+    width: 64px;
+    height: 50px;
+}

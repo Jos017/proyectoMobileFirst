@@ -13,6 +13,7 @@
     --soft-blue: #E7F5FF;
     --black: #201E1C;
     --warm-black: #282623;
+    --card-grey: #808080;
     --dark-grey: #757575;
     --medium-grey: #B5B0AC;
     --grey: #BABABA;
@@ -97,13 +98,13 @@ main {
     width: 100%;
     min-width: 320px;
     height: auto;
+    text-align: center;
     background-color: var(--off-white);
 }
 .exchange {
     width: 100%;
     height: auto;
     padding: 60px 0;
-    text-align: center;
 }
 .exchange .background-img {
     width: 195px;
@@ -220,7 +221,6 @@ main {
     color: var(--black);
     border-radius: 5px;
 }
-
 /* CSS Currency Table */
 .exchange-table__title--currency {
     color: var(--bitcoin-orange);
@@ -228,11 +228,51 @@ main {
 .exchange-table__date--currency {
     background-color: var(--soft-orange);
 }
-
 /* CSS Comision Table */
 .exchange-table__title--comision {
     color: var(--secondary-blue);
 }
 .exchange-table__date--comision {
     background-color: var(--soft-blue);
+}
+
+/* CSS Product detail section*/
+.product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 64px 16px;
+    background-color: var(--black);
+}
+.product-detail .product-detail__ico {
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 24px;
+    background-image: url("./assets/icons/batata.svg");
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+}
+.product-detail__title {
+    min-width: 288px;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+.product-detail__title h2 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail__title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--card-grey);
 }
